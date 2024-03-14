@@ -20,8 +20,18 @@ public class Main {
 //        s.assist();
 //        System.out.println(s.getQualification());
 //        s.getNurse().assist();
+//
+//        Doctor s = context.getBean(Doctor.class);
+//        System.out.println(s.qualification);
 
-        Doctor s = context.getBean(Doctor.class);
-        System.out.println(s.qualification);
+
+
+        Nurse n = context.getBean(Nurse.class);
+        n.assist();
+
+
+
+
+
     }
 }
