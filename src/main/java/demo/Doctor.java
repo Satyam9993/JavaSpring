@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 @Component
 //@Scope(value = "singleton")
@@ -36,5 +37,10 @@ public class Doctor implements Staff, BeanNameAware {
     @PostConstruct
     public void postConstructMethod(){
         System.out.println("This is Post Construct");
+    }
+
+    @PreDestroy
+    public void preDestroyMethod(){
+        System.out.println("This is Pre Destroyer");
     }
 }
