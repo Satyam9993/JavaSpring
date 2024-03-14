@@ -8,9 +8,14 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages = "demo")
 public class BeanConfig {
 
-    @Bean
-    public Nurse nurse(){
-        return new Nurse();
-    }
+//    @Bean
+//    public Nurse nurse(){
+//        return new Nurse();
+//    }
+//
+//    @Bean
+//    public Doctor doctor(){
+//        return new Doctor();
+//    }
 
 }

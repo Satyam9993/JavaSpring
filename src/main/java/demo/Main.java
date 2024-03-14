@@ -4,6 +4,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import javax.print.Doc;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -34,7 +36,12 @@ public class Main {
 //        Java Configuartion
 
         ApplicationContext context = new AnnotationConfigApplicationContext(BeanConfig.class);
-        Staff d = context.getBean(Nurse.class);
+        Doctor d = context.getBean(Doctor.class);
+        d.setQualification("MBBS");
+        System.out.println(d.qualification);
         d.assist();
+
+        Doctor d1 = context.getBean(Doctor.class);
+        System.out.println(d1.qualification);
     }
 }
