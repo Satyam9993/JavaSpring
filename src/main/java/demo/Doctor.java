@@ -7,9 +7,9 @@ public class Doctor implements Staff{
 
 
     String qualification;
-    Doctor(String qual){
-        qualification = qual;
-    }
+//    Doctor(String qual){
+//        qualification = qual;
+//    }
 //    private Nurse nurse;
     public void assist(){
         System.out.println("Doctor is Assisting");

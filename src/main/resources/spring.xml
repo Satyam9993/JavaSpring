@@ -6,9 +6,9 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
+
+
     <!-- bean definitions here -->
-
-
 
 <!--    <bean id="doctor" class="demo.Doctor">-->
 <!--        <property name="qualification" value="MBBS"></property>-->
@@ -17,6 +17,9 @@
 <!--    </bean>-->
 <!--    <bean id="nurse" class="demo.Nurse"></bean>-->
 
+
+
+<!--    Annotaion @Component based-->
 
     <context:component-scan base-package="demo"></context:component-scan>
 
